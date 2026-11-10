@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Charan Learn HTML Topics</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML topics with examples and explanations.">
+    <meta name="keywords" content="HTML, HTML5, Web Development, HTML Tags, HTML Elements, HTML Attributes">
+    <meta name="author" content="Chittem Charan">
+</head>
+
+<body id="Top">
+
+    <img src="./family.png" alt="Family image" width="50%">
+    <br><br>
+
+    <!-- Navigation Links -->
+
+    <a href="#Html">What is HTML?</a>
+    <a href="#Meta">Meta Tags</a>
+    <a href="#Paired">Paired Tags</a>
+    <a href="#Unparied">Unpaired Tags</a>
+    <a href="#Head">Head Section</a>
+    <a href="#Body">Body Section</a>
+    <a href="#Para-tag">Paragraph Tags</a>
+    <a href="#Table-Tags">Table Tags</a>
+    <a href="#Text-Form">Text Formatting Tags</a>
+    <a href="#List-tags">HTML Lists</a>
+    <a href="#Entitys">Character Entities</a>
+    <a href="#Sematic">Semantic Tags</a>
+    <a href="#Form-tags">Form Tags</a>
+    <a href="#Input-type">Input Types</a>
+    <a href="#Imag-tags">Image Tags</a>
+    <a href="#Achore">Anchor Tags</a>
+
+    <hr>
+
+    <!-- 1. HTML Introduction -->
+
+    <h1 id="Html">1. What is HTML?</h1>
+
+    <p>HTML stands for HyperText Markup Language.</p>
+
+    <pre>
+HTML is used to create the structure of a web page.
+
+- HyperText: Text that contains links to other pages or resources.
+- Markup: We use tags to define and organize content.
+- Language: A set of rules used to write instructions.
+    </pre>
+
+    <ul type="square">
+        <mark>
+            <li>&lt;html&gt; is the root element.</li>
+            <li>&lt;head&gt; contains webpage information.</li>
+            <li>&lt;title&gt; displays the title in the browser tab.</li>
+            <li>&lt;body&gt; contains visible webpage content.</li>
+            <li>&lt;/html&gt; indicates the end of the HTML document.</li>
+        </mark>
+    </ul>
+
+    <a href="#Top">Top</a>
+
+    <hr>
+
+    <!-- 2. Meta Tags -->
+
+    <h2 id="Meta">2. Meta Tags</h2>
+
+    <ul>
+        <li>Meta tags are HTML elements used to provide additional information (metadata) about a webpage to browsers, search engines and other services.</li>
+        <li>Meta means information about information.</li>
+        <li>Meta tags are placed inside the &lt;head&gt; section of an HTML document.</li>
+        <li>Meta tags are generally not displayed directly on the webpage.</li>
+        <li>They help browsers understand webpage settings and provide information about the page.</li>
+    </ul>
+
+    <table border="1" cellpadding="10" cellspacing="10">
+        <tr>
+            <th>Meta Tag</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>&lt;meta charset="UTF-8"&gt;</td>
+            <td>Specifies the character encoding of the webpage</td>
+        </tr>
+        <tr>
+            <td>&lt;meta name="viewport"&gt;</td>
+            <td>Controls webpage layout on different screen sizes</td>
+        </tr>
+        <tr>
+            <td>&lt;meta name="description"&gt;</td>
+            <td>Provides a short description of the webpage</td>
+        </tr>
+        <tr>
+            <td>&lt;meta name="keywords"&gt;</td>
+            <td>Specifies keywords related to the webpage</td>
+        </tr>
+        <tr>
+            <td>&lt;meta name="author"&gt;</td>
+            <td>Specifies the author of the webpage</td>
+        </tr>
+    </table>
+
+    <a href="#Top">Top</a>
+
+    <hr>
+
+    <!-- 3. Paired Tags -->
+
+    <h2 id="Paired">3. Paired Tags (Container Tags)</h2>
+
+    <p>HTML tags are classified into two types based on whether they have a closing tag or not.</p>
+
+    <p>Meaning: Paired tags contain both an opening tag and a closing tag. The content is written between these two tags.</p>
+
+    <ul type="square">
+        <li>Opening tag: &lt;tagname&gt;</li>
+        <li>Closing tag: &lt;/tagname&gt;</li>
+    </ul>
+
+    <a href="#Top">Top</a>
+
+    <hr>
+
+    <!-- 4. Unpaired Tags -->
+
+    <h2 id="Unparied">4. Unpaired Tags (Empty/Void Tags)</h2>
+
+    <p>Unpaired tags do not require a closing tag. They do not wrap content between opening and closing tags.</p>
+
+    <p>In an HTML document, we have two major sections:</p>
+
+    <ol type="I">
+        <li>&lt;head&gt; – Contains webpage information and resources.</li>
+        <li>&lt;body&gt; – Contains the actual webpage content.</li>
+    </ol>
+
+    <a href="#Top">Top</a>
+
+    <hr>
+
+    <!-- 5. Head Section -->
+
+    <h1 id="Head">5. HEAD Section</h1>
+
+    <p>
+        The <mark>&lt;head&gt;</mark> tag contains metadata and resources used by the browser.
+        Most of these elements are not directly displayed as webpage content.
+    </p>
+
+    <h2>Common Elements in the HEAD Section</h2>
+
+    <table border="5" cellpadding="10" cellspacing="10">
+        <tr>
+            <th>Tag</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>&lt;title&gt;</td>
+            <td>Sets browser tab title</td>
+        </tr>
+        <tr>
+            <td>&lt;meta&gt;</td>
+            <td>Provides webpage metadata</td>
+        </tr>
+        <tr>
+            <td>&lt;link&gt;</td>
+            <td>Connects external CSS and resources</td>
+        </tr>
+        <tr>
+            <td>&lt;style&gt;</td>
+            <td>Writes internal CSS</td>
+        </tr>
+        <tr>
+            <td>&lt;script&gt;</td>
+            <td>Includes JavaScript</td>
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+
+    <h3>Static Website:</h3>
+    <p>Content generally remains the same for every visitor until the source content is manually changed.</p>
+
+    <h3>Dynamic Website:</h3>
+    <p>Content can change based on user input, time, location, login status, database information, and other conditions.</p>
+
+    <a href="#Top">Top</a>
+
+    <br>
+    <hr>
+
+    <!-- 6. Body Section -->
+
+    <h1 id="Body">6. BODY Section</h1>
+
+    <p>
+        The &lt;body&gt; tag contains the content displayed on the webpage.
+        <br>
+        We can divide the body tags into different categories.
+    </p>
+
+    <h2>1. HTML Heading Tags</h2>
+
+    <table border="1" cellpadding="10" cellspacing="10">
+        <tr>
+            <th>Tag</th>
+            <th>Purpose</th>
+            <th>Default Size</th>
+        </tr>
+        <tr>
+            <td>h1</td>
+            <td>Main Heading</td>
+            <td>Largest</td>
+        </tr>
+        <tr>
+            <td>h2</td>
+            <td>Sub Heading</td>
+            <td>Smaller</td>
+        </tr>
+        <tr>
+            <td>h3</td>
+            <td>Third-level Heading</td>
+            <td>Smaller</td>
+        </tr>
+        <tr>
+            <td>h4</td>
+            <td>Fourth-level Heading</td>
+            <td>Smaller</td>
+        </tr>
+        <tr>
+            <td>h5</td>
+            <td>Fifth-level Heading</td>
+            <td>Smaller</td>
+        </tr>
+        <tr>
+            <td>h6</td>
+            <td>Sixth-level Heading</td>
+            <td>Smallest</td>
+        </tr>
+    </table>
+
+    <a href="#Top">Top</a>
+
+    <hr>
+
+    <!-- 7. Paragraph Tags -->
+
+    <h1 id="Para-tag">7. Paragraph Tags</h1>
+
+    <table border="5" cellpadding="10" cellspacing="10">
+        <tr>
+            <th>S.No</th>
+            <th>Tag</th>
+            <th>Tag Name</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>&lt;p&gt;</td>
+            <td>Paragraph tag</td>
+            <td>Used to display a paragraph or normal text on a webpage</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>&lt;pre&gt;</td>
+            <td>Preformatted text tag</td>
+            <td>Used to display text exactly as written in the HTML source, preserving spaces and line breaks.</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>&lt;br&gt;</td>
+            <td>Line break tag</td>
+            <td>Inserts a line break in the text</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>&lt;hr&gt;</td>
+            <td>Horizontal rule tag</td>
+            <td>Inserts a horizontal line</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <pre>
+public class html {
+    public static void main(String[] args) {
+        System.out.print("hello world");
+    }
+}
+    </pre>
+
+    <h2>Code Tag</h2>
+
+    <p>&lt;code&gt; identifies the content as programming code.</p>
+
+    <pre><code>
+public class html {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+    </code></pre>
+
+    <a href="#Top">Top</a>
+
+    <hr>
+
+    <!-- 8. Table Tags -->
+
+    <h2 id="Table-Tags">8. Table Tags / Purpose</h2>
+
+    <table border="5" cellpadding="10" cellspacing="10">
+        <tr>
+            <th>S.No</th>
+            <th>Tag</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>&lt;table&gt;</td>
+            <td>Creates a table</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>&lt;tr&gt;</td>
+            <td>Table Row</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>&lt;th&gt;</td>
+            <td>Table Header</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>&lt;td&gt;</td>
+            <td>Table Data</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>&lt;caption&gt;</td>
+            <td>Table title or caption</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>&lt;thead&gt;</td>
+            <td>Groups header rows</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>&lt;tbody&gt;</td>
+            <td>Groups body rows</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>cellspacing="value"</td>
+            <td>Specifies the space between two adjacent table cells.</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>cellpadding="value"</td>
+            <td>Specifies the space between the cell content and the cell border.</td>
+        </tr>
+    </table>
+
+    <a href="#Top">Top</a>
+
+    <hr>
+
+    <!-- 9. Text Formatting Tags -->
+
+    <h1 id="Text-Form">9. HTML Text Formatting Tags</h1>
+
+    <table border="5" cellpadding="10" cellspacing="10">
+        <tr>
+            <th>Formatting</th>
+            <th>Tag</th>
+            <th>Purpose</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>Bold</td>
+            <td>&lt;b&gt;</td>
+            <td>Makes text bold</td>
+            <td><b>Hello</b></td>
+        </tr>
+        <tr>
+            <td>Important</td>
+            <td>&lt;strong&gt;</td>
+            <td>Makes text important</td>
+            <td><strong>Hello</strong></td>
+        </tr>
+        <tr>
+            <td>Italic</td>
+            <td>&lt;i&gt;</td>
+            <td>Makes text italic</td>
+            <td><i>Hello</i></td>
+        </tr>
+        <tr>
+            <td>Emphasis</td>
+            <td>&lt;em&gt;</td>
+            <td>Makes text emphasized</td>
+            <td><em>Hello</em></td>
+        </tr>
+        <tr>
+            <td>Underline</td>
+            <td>&lt;u&gt;</td>
+            <td>Makes text underlined</td>
+            <td><u>Hello</u></td>
+        </tr>
+        <tr>
+            <td>Highlight</td>
+            <td>&lt;mark&gt;</td>
+            <td>Highlights text</td>
+            <td><mark>Hello</mark></td>
+        </tr>
+        <tr>
+            <td>Small</td>
+            <td>&lt;small&gt;</td>
+            <td>Makes text small</td>
+            <td><small>Hello</small></td>
+        </tr>
+        <tr>
+            <td>Delete</td>
+            <td>&lt;del&gt;</td>
+            <td>Marks text as deleted</td>
+            <td><del>Hello</del></td>
+        </tr>
+        <tr>
+            <td>Insert</td>
+            <td>&lt;ins&gt;</td>
+            <td>Marks text as inserted</td>
+            <td><ins>Hello</ins></td>
+        </tr>
+    </table>
+
+    <a href="#Top">Top</a>
+
+    <hr>
+
+    <!-- 10. HTML Lists -->
+
+    <h1 id="List-tags">10. HTML Lists</h1>
+
+    <h3>1. Ordered List (&lt;ol&gt;)</h3>
+
+    <ul>
+        <li>Displays items in a numbered sequence.</li>
+        <li>The order of items is important.</li>
+        <li>Uses &lt;li&gt; to define each list item.</li>
+    </ul>
+
+    <h3>2. Unordered List (&lt;ul&gt;)</h3>
+
+    <ul>
+        <li>Displays items with bullet points.</li>
+        <li>The order of items is not important.</li>
+        <li>Uses &lt;li&gt; to define each list item.</li>
+    </ul>
+
+    <h3>3. Description List (&lt;dl&gt;)</h3>
+
+    <ul>
+        <li>Displays terms along with their descriptions.</li>
+        <li>Mainly used for definitions or explanations.</li>
+        <li>Uses &lt;dt&gt; for the term and &lt;dd&gt; for its description.</li>
+    </ul>
+
+    <pre><code>
+&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+&lt;/dl&gt;
+    </code></pre>
+
+    <table border="5" cellpadding="10" cellspacing="10">
+        <tr>
+            <th>Tag</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>&lt;ol&gt;</td>
+            <td>Creates an ordered list</td>
+        </tr>
+        <tr>
+            <td>&lt;ul&gt;</td>
+            <td>Creates an unordered list</td>
+        </tr>
+        <tr>
+            <td>&lt;li&gt;</td>
+            <td>Defines a list item</td>
+        </tr>
+        <tr>
+            <td>&lt;dl&gt;</td>
+            <td>Creates a description list</td>
+        </tr>
+        <tr>
+            <td>&lt;dt&gt;</td>
+            <td>Defines a term or name</td>
+        </tr>
+        <tr>
+            <td>&lt;dd&gt;</td>
+            <td>Defines a description of a term</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h2>Additional Attributes in List Tags</h2>
+
+    <table border="5" cellpadding="10" cellspacing="10">
+        <tr>
+            <th>Attribute</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>Specifies numbering or bullet style</td>
+        </tr>
+        <tr>
+            <td>start</td>
+            <td>Specifies the starting number in an ordered list</td>
+        </tr>
+        <tr>
+            <td>reversed</td>
+            <td>Displays ordered list numbers in reverse</td>
+        </tr>
+        <tr>
+            <td>value</td>
+            <td>Specifies a particular number for an ordered list item</td>
+        </tr>
+    </table>
+
+    <a href="#Top">Top</a>
+
+    <hr>
+
+    <!-- 11. Character Entities -->
+
+    <h2 id="Entitys">11. Character Entities</h2>
+
+    <table border="5" cellpadding="10" cellspacing="10">
+        <tr>
+            <th>Character</th>
+            <th>Description</th>
+            <th>Entity Names</th>
+        </tr>
+        <tr>
+            <td>&lt;</td>
+            <td>Less than</td>
+            <td>&amp;lt;</td>
+        </tr>
+        <tr>
+            <td>&gt;</td>
+            <td>Greater than</td>
+            <td>&amp;gt;</td>
+        </tr>
+        <tr>
+            <td>&amp;</td>
+            <td>Ampersand</td>
+            <td>&amp;amp;</td>
+        </tr>
+        <tr>
+            <td>"</td>
+            <td>Double quotation mark</td>
+            <td>&amp;quot;</td>
+        </tr>
+        <tr>
+            <td>'</td>
+            <td>Single quotation mark / Apostrophe</td>
+            <td>&amp;apos;</td>
+        </tr>
+    </table>
+
+    <a href="#Top">Top</a>
+
+    <hr>
+
+    <!-- 12. Semantic Tags -->
+
+    <h1 id="Sematic">12. HTML Semantic Tags</h1>
+
+    <p>Semantic tags clearly describe the meaning and purpose of the content to the browser and developer.</p>
+
+    <p>They help organize webpage content and improve SEO and accessibility.</p>
+
+    <table border="5" cellpadding="10" cellspacing="10">
+        <tr>
+            <th>Tag</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>&lt;header&gt;</td>
+            <td>Defines the header section of a webpage or section</td>
+        </tr>
+        <tr>
+            <td>&lt;nav&gt;</td>
+            <td>Defines navigation links</td>
+        </tr>
+        <tr>
+            <td>&lt;main&gt;</td>
+            <td>Defines the main content of a webpage</td>
+        </tr>
+        <tr>
+            <td>&lt;section&gt;</td>
+            <td>Groups related content into sections</td>
+        </tr>
+        <tr>
+            <td>&lt;article&gt;</td>
+            <td>Defines independent content like an article or blog</td>
+        </tr>
+        <tr>
+            <td>&lt;aside&gt;</td>
+            <td>Defines additional or sidebar content</td>
+        </tr>
+        <tr>
+            <td>&lt;footer&gt;</td>
+            <td>Defines the footer section</td>
+        </tr>
+        <tr>
+            <td>&lt;figure&gt;</td>
+            <td>Groups images, diagrams or illustrations</td>
+        </tr>
+        <tr>
+            <td>&lt;figcaption&gt;</td>
+            <td>Provides a caption for a figure</td>
+        </tr>
+        <tr>
+            <td>&lt;details&gt;</td>
+            <td>Creates expandable or collapsible content</td>
+        </tr>
+        <tr>
+            <td>&lt;summary&gt;</td>
+            <td>Defines the visible heading for details</td>
+        </tr>
+        <tr>
+            <td>&lt;time&gt;</td>
+            <td>Represents a date or time</td>
+        </tr>
+        <tr>
+            <td>&lt;mark&gt;</td>
+            <td>Highlights important text</td>
+        </tr>
+    </table>
+
+    <a href="#Top">Top</a>
+
+    <hr>
+
+    <!-- 13. Form Tags -->
+
+    <h1 id="Form-tags">13. HTML Form Tags</h1>
+
+    <p>HTML form tags are used to collect information or input from users.</p>
+
+    <p>Examples: Login forms, registration forms, feedback forms and contact forms.</p>
+
+    <table border="5" cellpadding="10" cellspacing="10">
+        <tr>
+            <th>Tag</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>&lt;form&gt;</td>
+            <td>Creates an HTML form</td>
+        </tr>
+        <tr>
+            <td>&lt;input&gt;</td>
+            <td>Accepts user input</td>
+        </tr>
+        <tr>
+            <td>&lt;label&gt;</td>
+            <td>Provides a label for an input field</td>
+        </tr>
+        <tr>
+            <td>&lt;textarea&gt;</td>
+            <td>Accepts multiple lines of text</td>
+        </tr>
+        <tr>
+            <td>&lt;button&gt;</td>
+            <td>Creates a clickable button</td>
+        </tr>
+    </table>
+
+    <a href="#Top">Top</a>
+
+    <hr>
+
+    <!-- 14. Input Types -->
+
+    <h2 id="Input-type">14. Input Types and Their Purpose</h2>
+
+    <table border="5" cellpadding="10" cellspacing="10">
+        <tr>
+            <th>Input Type</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>text</td>
+            <td>Accepts text</td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td>Accepts a password</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>Accepts an email address</td>
+        </tr>
+        <tr>
+            <td>number</td>
+            <td>Accepts numerical values</td>
+        </tr>
+        <tr>
+            <td>radio</td>
+            <td>Selects one option from a group</td>
+        </tr>
+        <tr>
+            <td>checkbox</td>
+            <td>Selects multiple options</td>
+        </tr>
+        <tr>
+            <td>date</td>
+            <td>Selects a date</td>
+        </tr>
+        <tr>
+            <td>file</td>
+            <td>Uploads a file</td>
+        </tr>
+        <tr>
+            <td>submit</td>
+            <td>Submits the form</td>
+        </tr>
+        <tr>
+            <td>reset</td>
+            <td>Resets form values</td>
+        </tr>
+        <tr>
+            <td>button</td>
+            <td>Creates a normal button</td>
+        </tr>
+        <tr>
+            <td>tel</td>
+            <td>Accepts a telephone number</td>
+        </tr>
+        <tr>
+            <td>range</td>
+            <td>Selects a value using a slider</td>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td>Opens a color picker</td>
+        </tr>
+        <tr>
+            <td>time</td>
+            <td>Selects a time</td>
+        </tr>
+    </table>
+
+    <a href="#Top">Top</a>
+
+    <hr>
+
+    <!-- 15. Image Tags -->
+
+    <h1 id="Imag-tags">15. HTML Image Tags</h1>
+
+    <p>Image tags are used to display images on a webpage.</p>
+
+    <table border="5" cellpadding="10" cellspacing="10">
+        <tr>
+            <th>Tag / Attribute</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>&lt;img&gt;</td>
+            <td>Displays an image</td>
+        </tr>
+        <tr>
+            <td>src</td>
+            <td>Specifies the image location or path</td>
+        </tr>
+        <tr>
+            <td>alt</td>
+            <td>Provides alternative text if the image cannot load</td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>Specifies image width</td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>Specifies image height</td>
+        </tr>
+        <tr>
+            <td>&lt;picture&gt;</td>
+            <td>Provides different image sources for different conditions</td>
+        </tr>
+        <tr>
+            <td>&lt;source&gt;</td>
+            <td>Specifies alternative media sources inside picture</td>
+        </tr>
+    </table>
+
+    <a href="#Top">Top</a>
+
+    <hr>
+
+    <!-- 16. Anchor Tags -->
+
+    <h3 id="Achore">16. HTML Anchor Tags</h3>
+
+    <p>
+        (&lt;a&gt;) The anchor tag is used to create hyperlinks in a webpage.
+        <br>
+        It helps users navigate from one webpage to another webpage, website, file or a particular section of the same page.
+    </p>
+
+    <a href="#Top">Top</a>
+
+    <hr>
+
+    <footer>
+        &copy; Created by Chittem Charan in 2026
+    </footer>
+
+</body>
+</html>
+

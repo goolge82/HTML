@@ -1,0 +1,346 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(ellipse at 5% 5%, #5c00bd 0%, transparent 25%),
+        radial-gradient(ellipse at 95% 90%, #004cff 0%, transparent 30%),
+        linear-gradient(135deg, #02051c, #071b48, #030923);
+    overflow-x: hidden;
+    padding: 30px 15px;
+    position: relative;
+}
+
+/* Background neon curves */
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    width: 650px;
+    height: 850px;
+    border: 3px solid transparent;
+    border-radius: 45%;
+    pointer-events: none;
+    transform: rotate(40deg);
+    filter: drop-shadow(0 0 12px #005dff);
+    z-index: -1;
+}
+
+body::before {
+    top: -450px;
+    left: -350px;
+    border-right-color: #164cff;
+    box-shadow: 15px 0 30px #4b00ff;
+}
+
+body::after {
+    bottom: -500px;
+    right: -300px;
+    border-left-color: #006aff;
+    box-shadow: -15px 0 30px #5200ff;
+}
+
+/* Main container */
+
+.container {
+    width: 780px;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Heading */
+
+h1 {
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: white;
+    margin-bottom: 25px;
+    text-shadow:
+        0 0 8px #00aaff,
+        0 0 18px #008cff,
+        0 0 35px #008cff;
+}
+
+/* Glass form */
+
+.signup-form {
+    width: 100%;
+    padding: 45px 55px;
+    border: 2px solid #72cfff;
+    border-radius: 42px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(130, 145, 220, 0.40),
+        rgba(30, 45, 100, 0.70),
+        rgba(50, 55, 120, 0.50)
+    );
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 0 12px #00aaff,
+        0 0 30px rgba(0, 145, 255, 0.65),
+        inset 0 0 25px rgba(130, 180, 255, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input fields */
+
+.input-box {
+    width: 100%;
+    height: 74px;
+    display: flex;
+    align-items: center;
+
+    border: 2px solid rgba(210, 220, 255, 0.85);
+    border-radius: 18px;
+
+    background: rgba(155, 170, 225, 0.19);
+
+    box-shadow:
+        inset 0 0 10px rgba(255, 255, 255, 0.05);
+
+    padding: 0 22px;
+    transition: 0.3s ease;
+}
+
+.input-box:hover,
+.input-box:focus-within {
+    border-color: #00cfff;
+    box-shadow:
+        0 0 10px #009dff,
+        inset 0 0 10px rgba(0, 150, 255, 0.15);
+}
+
+/* Icons */
+
+.input-box i {
+    font-size: 32px;
+    color: white;
+    width: 42px;
+    text-align: left;
+    flex-shrink: 0;
+}
+
+/* Input text */
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    color: white;
+    font-size: 28px;
+    padding-left: 20px;
+}
+
+.input-box input::placeholder {
+    color: #e0e5ff;
+    opacity: 1;
+}
+
+/* Date field */
+
+.input-box input[type="date"] {
+    color: #e0e5ff;
+    color-scheme: dark;
+}
+
+/* Gender section */
+
+.gender {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 10px 15px;
+    min-height: 65px;
+}
+
+.gender label {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.gender input {
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #078cff;
+    border-radius: 50%;
+    cursor: pointer;
+
+    box-shadow: 0 0 10px #008cff;
+    transition: 0.2s;
+}
+
+.gender input:checked {
+    background: #16cfff;
+    border-color: white;
+    box-shadow:
+        0 0 8px #00d9ff,
+        0 0 20px #008cff;
+}
+
+/* Resume field */
+
+.file-box {
+    position: relative;
+}
+
+.file-box label {
+    color: #e0e5ff;
+    font-size: 28px;
+    padding-left: 20px;
+    cursor: pointer;
+    flex: 1;
+    text-align: left;
+}
+
+.file-box input[type="file"] {
+    position: absolute;
+    right: 12px;
+    width: 155px;
+    font-size: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.file-box input[type="file"]::file-selector-button {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 16px;
+    color: white;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Sign up button */
+
+button {
+    width: 100%;
+    height: 90px;
+    margin-top: 10px;
+
+    border: 2px solid #4deaff;
+    border-radius: 50px;
+
+    background: linear-gradient(
+        100deg,
+        #14e7ed,
+        #007bff 55%,
+        #d000ff
+    );
+
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 8px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 15px #00cfff,
+        0 0 30px rgba(0, 125, 255, 0.8),
+        0 0 40px rgba(190, 0, 255, 0.5);
+
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.02);
+    box-shadow:
+        0 0 20px #00eaff,
+        0 0 45px #007bff,
+        0 0 55px #d000ff;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 55px;
+    }
+
+    .signup-form {
+        padding: 25px 20px;
+        gap: 15px;
+        border-radius: 28px;
+    }
+
+    .input-box {
+        height: 58px;
+        border-radius: 13px;
+        padding: 0 12px;
+    }
+
+    .input-box i {
+        font-size: 22px;
+        width: 30px;
+    }
+
+    .input-box input {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    .gender {
+        gap: 30px;
+        padding: 5px;
+    }
+
+    .gender label {
+        font-size: 19px;
+        gap: 10px;
+    }
+
+    .gender input {
+        width: 28px;
+        height: 28px;
+    }
+
+    .file-box label {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    .file-box input[type="file"] {
+        width: 125px;
+    }
+
+    .file-box input[type="file"]::file-selector-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        height: 65px;
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+}

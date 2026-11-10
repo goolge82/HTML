@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Indian Express - Sports News</title>
+
+    <style>
+        /* Universal styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            color: #222;
+            font-family: Georgia, "Times New Roman", serif;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        /* Header */
+        header {
+            background-color: #172b4d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-bottom: 5px solid #c62828;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            letter-spacing: 2px;
+        }
+
+        header h3 {
+            color: #ffdede;
+            margin-top: 8px;
+        }
+
+        /* Navigation */
+        nav {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: #172b4d;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #c62828;
+            transform: translateY(-3px);
+        }
+
+        /* Welcome message */
+        .welcome {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        /* Articles */
+        article {
+            max-width: 1100px;
+            background-color: white;
+            padding: 20px;
+            margin: 25px auto;
+            border-radius: 8px;
+            border-left: 5px solid #c62828;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        article:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        article h2 {
+            color: #c62828;
+            font-size: 23px;
+            margin-bottom: 12px;
+        }
+
+        article p {
+            font-size: 17px;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        /* News images */
+        .news-image {
+            display: block;
+            width: 100%;
+            max-width: 650px;
+            height: 300px;
+            object-fit: cover;
+            margin: 15px auto;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #172b4d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 35px;
+            border-top: 5px solid #c62828;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            article h2 {
+                font-size: 19px;
+            }
+
+            article p {
+                font-size: 15px;
+            }
+
+            .news-image {
+                height: 200px;
+            }
+
+            nav a {
+                padding: 8px 12px;
+                font-size: 13px;
+            }
+        }
+
+        /* Print */
+        @media print {
+            body {
+                background: white;
+            }
+
+            nav {
+                display: none;
+            }
+
+            article {
+                box-shadow: none;
+                break-inside: avoid;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Newspaper Header -->
+    <header>
+        <h1>INDIAN EXPRESS</h1>
+        <h3>SPORTS NEWS</h3>
+        <p>India & International Sports Daily</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="newspaper.html">Home Main News</a>
+        <a href="Bussinessnews.html">Business News</a>
+    </nav>
+
+    <p class="welcome">
+        Welcome to the Sports News section!
+        Read the latest sports headlines and updates.
+    </p>
+
+    <!-- Article 1 -->
+    <article>
+        <h2>1. Afghanistan Defeats Zimbabwe in T20 International</h2>
+
+        <img class="news-image"
+        src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=1000"
+        alt="Cricket stadium">
+
+        <p>
+            Sharjah: Afghanistan defeated Zimbabwe by 19 runs
+            in the second T20 International. Azmatullah Omarzai
+            delivered an outstanding performance, scoring 116 runs
+            and helping Afghanistan post 221/7. Rashid Khan also
+            achieved a major milestone by becoming the first bowler
+            to take 200 wickets in men's T20 internationals.
+        </p>
+    </article>
+
+    <!-- Article 2 -->
+    <article>
+        <h2>2. Prasidh Krishna Ruled Out of New Zealand ODI Series</h2>
+
+        <img class="news-image"
+        src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=1000"
+        alt="Cricket ground">
+
+        <p>
+            New Delhi: Indian fast bowler Prasidh Krishna has been
+            ruled out of the ODI series against New Zealand due to
+            a hamstring injury. The development is a setback for
+            India's bowling department as the team prepares for
+            the upcoming matches.
+        </p>
+    </article>
+
+    <!-- Article 3 -->
+    <article>
+        <h2>3. England Defeats Sri Lanka in ODI Tri-Series</h2>
+
+        <img class="news-image"
+        src="https://images.unsplash.com/photo-1593766827228-8737b0cd6a16?w=1000"
+        alt="Cricket batsman">
+
+        <p>
+            Lahore: England defeated Sri Lanka by 55 runs in the
+            ODI tri-series. England scored 386 runs, with Ben Duckett
+            producing an excellent innings of 167 runs. Sri Lanka
+            fought back through Pavan Rathnayake, who scored 118,
+            but eventually finished at 331.
+        </p>
+    </article>
+
+    <!-- Article 4 -->
+    <article>
+        <h2>4. Australia Gains Advantage in Test Against South Africa</h2>
+
+        <img class="news-image"
+        src="https://images.unsplash.com/photo-1512719994953-eabf50895df7?w=1000"
+        alt="Cricket match">
+
+        <p>
+            Australian batter Josh Inglis scored a century in the
+            third Test against South Africa, helping Australia gain
+            an advantage. Australia posted 429 runs in its first
+            innings. South Africa continued its second innings
+            at 140/4, trailing Australia by 40 runs.
+        </p>
+    </article>
+
+    <!-- Article 5 -->
+    <article>
+        <h2>5. India Secures Victory in Asian Champions Trophy</h2>
+
+        <img class="news-image"
+        src="https://images.unsplash.com/photo-1520338258525-606808adc0e1?w=1000"
+        alt="Hockey sports field">
+
+        <p>
+            Sports Desk: India produced an impressive performance
+            against China, securing a 5–2 victory in the Asian
+            Champions Trophy. Harmanpreet Singh and Sukhjeet Singh
+            scored two goals each, helping India dominate the match.
+        </p>
+    </article>
+
+    <!-- Article 6 -->
+    <article>
+        <h2>6. Daniil Medvedev Defeats Cameron Norrie in Vienna</h2>
+
+        <img class="news-image"
+        src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=1000"
+        alt="Tennis court">
+
+        <p>
+            Vienna: Russian tennis player Daniil Medvedev defeated
+            Cameron Norrie after saving a match point and overcoming
+            a difficult situation. The victory marked his 100th
+            tour-level quarter-final appearance.
+        </p>
+    </article>
+
+    <!-- Article 7 -->
+    <article>
+        <h2>7. India Prepares for Fourth T20I Against New Zealand</h2>
+
+        <img class="news-image"
+        src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=1000"
+        alt="Cricket stadium">
+
+        <p>
+            India will face New Zealand in the fourth T20
+            International. India has already secured the five-match
+            series with a 3–0 lead. The Indian team will look to
+            continue its winning performance, while New Zealand
+            will aim to register its first victory in the series.
+        </p>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 Indian Express News Agency.
+            All Rights Reserved.
+        </p>
+        <p>Sports News | Cricket | Hockey | Tennis</p>
+    </footer>
+
+</body>
+</html>
